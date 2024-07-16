@@ -1,0 +1,12 @@
+dependencies:
+- name: product
+  repository: file://../product
+  version: 0.1.0
+- name: config-server
+  repository: file://../config-server
+  version: 0.1.0
+- name: product-composite
+  repository: file://../product-composite
+  version: 0.1.0
+digest: sha256:070ac466f67e724fdccb2a8c04016c227725414964e1b4454fd2c34671e4e54f
+generated: "2024-07-11T17:17:50.5519792+03:30"

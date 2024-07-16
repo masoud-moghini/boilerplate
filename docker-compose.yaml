@@ -1,0 +1,21 @@
+services:
+  product-composite:
+    build:
+      context: ProductCompositeService
+      dockerfile: Dockerfile
+    image: k8s/product-composite:latest
+    ports:
+      - "9091:9090"
+      - "5005:5005"
+    volumes:
+      - "./config/product-composite:/config"
+
+  product-service:
+    build:
+      context: microservices/product
+      dockerfile: Dockerfile
+    image: k8s/product-service:latest
+    ports:
+      - "8085:8080"
+    volumes:
+      - "./config/product-service:/config"

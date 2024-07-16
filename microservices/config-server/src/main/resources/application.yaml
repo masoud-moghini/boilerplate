@@ -1,0 +1,8 @@
+spring.application.name: config-server
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/masoud-moghini/boilderplate.gitgit
+          skipSslValidation: true
