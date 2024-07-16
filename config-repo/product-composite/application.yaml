@@ -1,5 +1,0 @@
-spring.application.name: ProductCompositeService
-product.service:
-  url: http://product-service:8080
-server:
-  port: 9090
