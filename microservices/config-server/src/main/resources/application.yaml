@@ -4,5 +4,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/masoud-moghini/boilerplate/config-repo
+          uri: https://github.com/masoud-moghini/config
           skipSslValidation: true
