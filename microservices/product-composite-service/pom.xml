@@ -6,7 +6,7 @@
         <groupId>edu.sample</groupId>
         <artifactId>k8s</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>composite.product.service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
