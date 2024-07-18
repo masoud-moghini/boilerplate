@@ -32,3 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 /conifg-repo/
+/kubernetes/helm/config-server/charts/
+/kubernetes/helm/common/charts/
+/kubernetes/helm/product-composite/charts/
+/kubernetes/helm/product/charts/
+/kubernetes/helm/dev-env/charts/
