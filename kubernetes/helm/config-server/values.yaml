@@ -1,7 +1,11 @@
 fullnameOverride: config-server
 
 image:
+  repository: k8s
   name: config-server
+  pullPolicy: Never
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: latest
 
 ports:
   - name: http
@@ -19,11 +23,6 @@ readinessProbe_enabled: true
 readinessProbe:
   httpGet:
     port: 8888
-
-configmap:
-  enabled: true
-  volumeMounts:
-    mountPath: /config-repo
 
 service:
   ports:

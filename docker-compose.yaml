@@ -19,3 +19,14 @@ services:
       - "8085:8080"
     volumes:
       - "./config/product-service:/config"
+
+
+  config-server:
+    build:
+      context: microservices/config-server
+      dockerfile: Dockerfile
+    image: k8s/config-server:latest
+    ports:
+      - "8085:8080"
+    volumes:
+      - "./config/product-service:/config"

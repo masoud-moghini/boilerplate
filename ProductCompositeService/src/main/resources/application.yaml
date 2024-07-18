@@ -1,5 +1,9 @@
-spring.application.name: ProductCompositeService
-product.service:
-  url: http://localhost:8080
-server:
-  port: 9090
+spring:
+  application.name: product-composite
+  profiles:
+    default: default
+  cloud:
+    config:
+      name: product-composite
+  config:
+    import: optional:configserver:http://config-server:8080
